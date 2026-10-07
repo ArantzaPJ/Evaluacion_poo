@@ -8,7 +8,7 @@ class Alojamiento:
 
     def mostrar_info(self):
         # COMPLETAR
-        pass
+        return f"Nombre: {self.nombre}, Tipo: {self.tipo}, Precio: ${self.precio:,.2f}, Capacidad: {self.capacidad} personas"
 
     # Reglas (léelas con atención, no son solo "rellenar")
     # 1. mostrar_info()
@@ -18,8 +18,10 @@ class Alojamiento:
     # El precio debe verse como moneda y la capacidad como número de personas.
 
     def precio_por_persona(self):
-        # COMPLETAR
-        pass
+        if self.precio <= 0 or self.capacidad <= 0:
+            return None
+        else:
+            return round(self.precio / self.capacidad, 2)
 
     # 2. precio_por_persona()
 
@@ -45,6 +47,11 @@ departamento = Alojamiento(
     4
 )
 
+print(casa.mostrar_info())
+print(casa.precio_por_persona())
+
+print(departamento.mostrar_info())
+print(departamento.precio_por_persona())
 
 # Completa las instrucciones necesarias para:
 # 1. Mostrar la información de la casa.
