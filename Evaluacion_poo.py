@@ -8,7 +8,7 @@ class Alojamiento:
 
     def mostrar_info(self):
         # COMPLETAR
-        pass
+        return f"Nombre: {self.nombre}, Tipo: {self.tipo}, Precio: ${self.precio:,.2f}, Capacidad: {self.capacidad} personas"
 
     # Reglas (léelas con atención, no son solo "rellenar")
     # 1. mostrar_info()
