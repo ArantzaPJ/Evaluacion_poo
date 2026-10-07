@@ -47,6 +47,11 @@ departamento = Alojamiento(
     4
 )
 
+print(casa.mostrar_info())
+print(casa.precio_por_persona())
+
+print(departamento.mostrar_info())
+print(departamento.precio_por_persona())
 
 # Completa las instrucciones necesarias para:
 # 1. Mostrar la información de la casa.
